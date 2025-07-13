@@ -374,7 +374,7 @@ return function(Iris: Types.Internal)
     end
 
     function widgets.applyButtonClick(_thisWidget: Types.Widget, thisInstance: GuiButton, callback: () -> ())
-        thisInstance.MouseButton1Click:Connect(function()
+        thisInstance.Activated:Connect(function()
             callback()
         end)
     end
